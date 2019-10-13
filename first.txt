@@ -3,13 +3,22 @@
 ＞＞＞
 
 git init	「gitでバージョン管理はじめるよ」のコマンド。
-　→ .git ディレクトリを作る。
+　（パラメータなし）　→　.git ディレクトリを作る。
 
 git add		【ステージングエリア】に追加。*控え室*
+　→git add [ファイル名]　→　ステージングエリアに送る
+　→git add .　で全部追加！
 
-git commit	ローカルリポジトリに変更を記録。
+git commit	ローカルリポジトリに変更を記録。＊ひとつの作業ごとに！
+　（パラメータなし）　→　（コミットメッセージ入力画面がvimで開かれる）
+　（コミットメッセージ入力についてはpdf参照）
+
 git push	リモートリポジトリにうｐ。
 
 git remote add origin https://github.com/show55/intro_git.git
 git push -u origin master
+
+＊＊＊
+
+●コミットメッセージ >> 変更内容の要約（空行）変更した理由
 
