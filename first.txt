@@ -11,14 +11,25 @@ git add		【ステージングエリア】に追加。*控え室*
 
 git commit	ローカルリポジトリに変更を記録。＊ひとつの作業ごとに！
 　（パラメータなし）　→　（コミットメッセージ入力画面がvimで開かれる）
-　（コミットメッセージ入力についてはpdf参照）
+　git commit -v でも可		コミットメッセージ入力についてはpdf参照）
 
 git push	リモートリポジトリにうｐ。
+
+git rm
+
+git status	状況確認
+
+
+＊＊＊
 
 git remote add origin https://github.com/show55/intro_git.git
 git push -u origin master
 
 ＊＊＊
+
+
+
+
 
 ●コミットメッセージ >> 変更内容の要約（空行）変更した理由
 
