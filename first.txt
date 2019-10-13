@@ -1,10 +1,15 @@
-2019/10/10
+2019/10/10　last_update　2019/10/13
 あらためて作ったファイル(･∀･)
 ＞＞＞
 
 git init	「gitでバージョン管理はじめるよ」のコマンド。
+　→ .git ディレクトリを作る。
 
-git add		【ステージングエリア】に追加。
+git add		【ステージングエリア】に追加。*控え室*
+
 git commit	ローカルリポジトリに変更を記録。
 git push	リモートリポジトリにうｐ。
+
+git remote add origin https://github.com/show55/intro_git.git
+git push -u origin master
 
