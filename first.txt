@@ -19,6 +19,11 @@ git rm
 
 git status	状況確認
 
+git log		これまでの履歴表示
+	--oneline とか　-p [ファイル名] とか　-n 3　等もあり！
+
+git diff	ステージとの変更差分を確認。
+git diff HEAD	ステージとコミットの差分を確認。
 
 ＊＊＊
 
@@ -28,8 +33,7 @@ git push -u origin master
 ＊＊＊
 
 
-
-
-
 ●コミットメッセージ >> 変更内容の要約（空行）変更した理由
+
+●: が出てるとき >> j,k ↑↓　qで終了
 
