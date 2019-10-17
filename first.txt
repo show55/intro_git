@@ -45,6 +45,11 @@ git の対象外にするファイルは .gitignore ファイルで指定する�
 git rm ファイル名　or　git rm -r ディレクトリ名
 
 
+???
+git reset HEAD second.txt
+git checkout second.txt
+
+
 ＊＊＊
 
 
