@@ -1,39 +1,54 @@
-2019/10/10�@last_update�@2019/10/14
-���炽�߂č�����t�@�C��(��ͥ)
-������
+2019/10/10　last_update　2019/10/14
+あらためて作ったファイル(･∀･)
+UTF-8にしてみたよ。（2019/10/14）
 
-git init	�ugit�Ńo�[�W�����Ǘ��͂��߂��v�̃R�}���h�B
-�@�i�p�����[�^�Ȃ��j�@���@.git �f�B���N�g�������B
+＞＞＞
 
-git add		�y�X�e�[�W���O�G���A�z�ɒǉ��B*�T����*
-�@��git add [�t�@�C����]�@���@�X�e�[�W���O�G���A�ɑ���
-�@��git add .�@�őS���ǉ��I
+git init	「gitでバージョン管理はじめるよ」のコマンド。
+　（パラメータなし）　→　.git ディレクトリを作る。
 
-git commit	���[�J�����|�W�g���ɕύX���L�^�B���ЂƂ̍�Ƃ��ƂɁI
-�@�i�p�����[�^�Ȃ��j�@���@�i�R�~�b�g���b�Z�[�W���͉�ʂ�vim�ŊJ�����j
-�@git commit -v �ł���		�R�~�b�g���b�Z�[�W���͂ɂ��Ă�pdf�Q�Ɓj
+git add		【ステージングエリア】に追加。*控え室*
+　→git add [ファイル名]　→　ステージングエリアに送る
+　→git add .　で全部追加！
 
-git push	�����[�g���|�W�g���ɂ����B
+git commit	ローカルリポジトリに変更を記録。＊ひとつの作業ごとに！
+　（パラメータなし）　→　（コミットメッセージ入力画面がvimで開かれる）
+　git commit -v でも可		コミットメッセージ入力についてはpdf参照）
+
+git push	リモートリポジトリにうｐ。
 
 git rm
 
-git status	�󋵊m�F
+git status	状況確認
 
-git log		����܂ł̗���\��
-	--oneline �Ƃ��@-p [�t�@�C����] �Ƃ��@-n 3�@��������I
+git log		これまでの履歴表示
+	--oneline とか　-p [ファイル名] とか　-n 3　等もあり！
 
-git diff	�X�e�[�W�Ƃ̕ύX�������m�F�B
-git diff HEAD	�X�e�[�W�ƃR�~�b�g�̍������m�F�B
+git diff	ステージとの変更差分を確認。
+git diff HEAD	ステージとコミットの差分を確認。
 
-������
+＊＊＊
 
 git remote add origin https://github.com/show55/intro_git.git
+	→ origin の URL を指定してる。【登録】
+
+git push origin master
 git push -u origin master
+	→ローカルからリモートに送ってる。
+	→master がブランチ名。
 
-������
+＞＞＞
+
+git の対象外にするファイルは .gitignore ファイルで指定するとよさげ。
+
+● 後から対象外にしたいときは git rm を使う。
+git rm ファイル名　or　git rm -r ディレクトリ名
 
 
-���R�~�b�g���b�Z�[�W >> �ύX���e�̗v��i��s�j�ύX�������R
+＊＊＊
 
-��: ���o�Ă�Ƃ� >> j,k �����@q�ŏI��
+
+●コミットメッセージ >> 変更内容の要約（空行）変更した理由
+
+●: が出てるとき >> j,k ↑↓　qで終了
 
